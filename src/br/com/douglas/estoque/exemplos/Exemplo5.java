@@ -5,6 +5,7 @@
  */
 package br.com.douglas.estoque.exemplos;
 
+import br.com.douglas.model.Autor;
 import br.com.douglas.model.Livro;
 
 /**
@@ -14,6 +15,8 @@ import br.com.douglas.model.Livro;
 public class Exemplo5 {
 
     public static void main(String[] args) {
+        Autor autor = new Autor();
+        autor.setNome("Douglas");
         Livro livro1 = new Livro();
         System.out.println(livro1.getIsbn());
             
