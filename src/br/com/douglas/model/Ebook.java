@@ -15,7 +15,20 @@ public class Ebook extends Livro {
     public Ebook (Autor autor){
        super(autor);
     }
-
+    
+    //Página 83
+    @Override
+    public boolean aplicarDescontoDe (double porcentagem){
+        if(porcentagem > 0.15){
+            return false;
+        } else {
+//        double desconto = this.getValor() * porcentagem;
+//        this.setValor(this.getValor() - desconto);
+//        return true;
+        return super.aplicarDescontoDe(porcentagem);
+        }
+    }
+    
     public String getWaterMark() {
         return waterMark;
     }

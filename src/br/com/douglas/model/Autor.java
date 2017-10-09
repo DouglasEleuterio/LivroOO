@@ -22,6 +22,20 @@ public class Autor {
         System.out.println("CPF: " + cpf);
     }
 
+    public Autor (){
+        
+    }
+    
+    public Autor(String nome){
+        this.nome = nome;
+    }
+
+    public Autor(String nome, String email, String cpf) {
+        this.nome = nome;
+        this.email = email;
+        this.cpf = cpf;
+    }
+    
     public String getNome() {
         return nome;
     }

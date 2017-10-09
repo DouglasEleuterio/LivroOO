@@ -25,6 +25,11 @@ public class Livro {
         this.impresso = true;
     }
     
+    public Livro(double valor){
+        this();
+        this.valor = valor;
+    }
+    
     public Livro (){
         this.isbn = "000-00-00000-00-0";
     }
