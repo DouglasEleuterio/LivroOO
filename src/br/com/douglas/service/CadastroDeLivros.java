@@ -7,6 +7,8 @@ package br.com.douglas.service;
 
 import br.com.douglas.model.Autor;
 import br.com.douglas.model.Livro;
+import br.com.douglas.model.LivroFisico;
+import br.com.douglas.model.Ebook;
 
 /**
  *
@@ -20,7 +22,7 @@ public class CadastroDeLivros {
         autor.setEmail("rodrigo.turini@caelum.com.br");
         autor.setCpf("123.456.789.10");
 
-        Livro livro = new Livro(autor);
+        Livro livro = new LivroFisico(autor);
         livro.setNome("Java 8 Prático");
         livro.setDescricao("Novos recursos da linguagem");
         livro.setValor(59.90);
@@ -33,7 +35,7 @@ public class CadastroDeLivros {
         outroAutor.setEmail("paulo.silveira@caelum.com.br");
         outroAutor.setCpf("123.456.789.10");
 
-        Livro outrolivro = new Livro(outroAutor);
+        Livro outrolivro = new Ebook(outroAutor);
         outrolivro.setNome ("Lógica de Programaçãao");
         outrolivro.setDescricao("Crie seus primeiros programas");
         outrolivro.setValor(59.90);

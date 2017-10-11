@@ -25,7 +25,9 @@ public class Ebook extends Livro {
 //        double desconto = this.getValor() * porcentagem;
 //        this.setValor(this.getValor() - desconto);
 //        return true;
+        System.out.println("Aplicado desconto de Ebook: "+porcentagem * this.getValor());
         return super.aplicarDescontoDe(porcentagem);
+        //Capitulo de Interfaces
         }
     }
     

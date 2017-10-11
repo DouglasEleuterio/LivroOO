@@ -20,5 +20,15 @@ public class LivroFisico extends Livro {
     public double getTaxaImpressao(){
         return this.getValor() * taxaImpressao;
     }
-    
+ 
+    public boolean aplicarDescontoDe(double porcentagem) {
+        if(porcentagem > 0.3){
+            return false;
+        } else {
+        double valorDesconto = this.getValor() * porcentagem;
+            setValor(getValor()-valorDesconto);
+            System.out.println("Aplicado desconto no Livro Fisico de R$: "+valorDesconto);
+            return true;
+        } 
+    }
 }

@@ -9,7 +9,7 @@ package br.com.douglas.model;
  *
  * @author douglas-pc
  */
-public class Livro {
+public abstract class Livro {
 
     private String nome;
     private String descricao;
@@ -55,19 +55,21 @@ public class Livro {
     /**
      * @param Porcetagem 10% = 0.1 | 25% = 0.25
      */
-    public boolean aplicarDescontoDe(double porcentagem) {
-        if(porcentagem > 0.3){
-            return false;
-        } else {
-        this.valor -= this.valor * porcentagem;
-        return true;
-        }
-    }
+     public abstract boolean aplicarDescontoDe(double porcentagem);
+//    public boolean aplicarDescontoDe(double porcentagem) {
+//        if(porcentagem > 0.3){
+//            return false;
+//        } else {
+//            System.out.println("Desconto de Livro Fisico Aplicado R$ :"+porcentagem * this.getValor());
+//        this.valor -= this.valor * porcentagem;
+//        return true;
+//        }
+//    }
 
     public String getNome() {
         return nome;
     }
-
+    
     public void setNome(String nome) {
         this.nome = nome;
     }
