@@ -5,9 +5,10 @@
  */
 package br.com.douglas.livraria.teste;
 
-import br.com.douglas.model.Autor;
-import br.com.douglas.model.Ebook;
-import br.com.douglas.model.LivroFisico;
+import br.com.douglas.livraria.Autor;
+import br.com.douglas.livraria.produtos.Ebook;
+import br.com.douglas.livraria.produtos.LivroFisico;
+import br.com.douglas.service.CarrinhoDeCompras;
 
 /**
  *
