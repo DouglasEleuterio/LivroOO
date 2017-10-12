@@ -3,12 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.douglas.service;
+package br.com.douglas.livraria.teste;
 
-import br.com.douglas.model.Autor;
-import br.com.douglas.model.Livro;
-import br.com.douglas.model.LivroFisico;
-import br.com.douglas.model.Ebook;
+import br.com.douglas.livraria.Autor;
+import br.com.douglas.livraria.produtos.Ebook;
+import br.com.douglas.livraria.produtos.Livro;
+import br.com.douglas.livraria.produtos.LivroFisico;
+
 
 /**
  *

@@ -5,9 +5,12 @@
  */
 package br.com.douglas.service;
 
-import br.com.douglas.model.Ebook;
-import br.com.douglas.model.LivroFisico;
-import br.com.douglas.model.Livro;
+//import br.com.douglas.model.Ebook;
+
+import br.com.douglas.livraria.produtos.Produto;
+
+//import br.com.douglas.model.LivroFisico;
+//import br.com.douglas.model.Livro;
 
 
 /**
@@ -19,11 +22,10 @@ import br.com.douglas.model.Livro;
 public class CarrinhoDeCompras {
     
     private double total;
-    
-    public void adiciona(Livro livro){
-        System.out.println("Adicionado: "+livro);
-        livro.aplicarDescontoDe(0.02);
-        total += livro.getValor();
+    private Produto [] produtos;
+    public void adiciona(Produto produto){
+        System.out.println("Adicionado: "+produto);
+        total += produto.getValor();
     }
 
 

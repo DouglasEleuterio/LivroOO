@@ -3,13 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.douglas.model;
+package br.com.douglas.livraria.produtos;
+
+import br.com.douglas.livraria.Autor;
 
 /**
  *
  * @author douglas-pc
  */
-public class Ebook extends Livro {
+public class Ebook extends Livro implements Promocional{
     private String waterMark;
     
     public Ebook (Autor autor){
@@ -26,7 +28,7 @@ public class Ebook extends Livro {
 //        this.setValor(this.getValor() - desconto);
 //        return true;
         System.out.println("Aplicado desconto de Ebook: "+porcentagem * this.getValor());
-        return super.aplicarDescontoDe(porcentagem);
+        return aplicarDescontoDe(porcentagem);
         //Capitulo de Interfaces
         }
     }

@@ -3,13 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.douglas.model;
+package br.com.douglas.livraria.produtos;
+
+import br.com.douglas.livraria.Autor;
 
 /**
  *
  * @author douglas-pc
  */
-public abstract class Livro {
+public abstract class Livro implements Produto{
 
     private String nome;
     private String descricao;
@@ -55,7 +57,7 @@ public abstract class Livro {
     /**
      * @param Porcetagem 10% = 0.1 | 25% = 0.25
      */
-     public abstract boolean aplicarDescontoDe(double porcentagem);
+//     public abstract boolean aplicarDescontoDe(double porcentagem);
 //    public boolean aplicarDescontoDe(double porcentagem) {
 //        if(porcentagem > 0.3){
 //            return false;

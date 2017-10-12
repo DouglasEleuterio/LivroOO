@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.douglas.service;
+package br.com.douglas.livraria.teste;
 
 import br.com.douglas.model.Autor;
 import br.com.douglas.model.Ebook;
@@ -21,6 +21,9 @@ public class RegistroDeVendas {
         LivroFisico fisico = new LivroFisico(autor);
         fisico.setNome("Test-Drive Development");
         fisico.setValor(59.90);
+        if (fisico.aplicaDescontoDe10Porcento()){
+            System.out.println("Valor agora é: R$"+fisico.getValor());
+        }
         
         Ebook ebook = new Ebook(autor);
         fisico.setNome("Test-Drive Development");
@@ -29,6 +32,8 @@ public class RegistroDeVendas {
         CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
         carrinho.adiciona(fisico);
         carrinho.adiciona(ebook);
+        
+        
         
         System.out.println("Total: "+carrinho.getTotal());
     } 

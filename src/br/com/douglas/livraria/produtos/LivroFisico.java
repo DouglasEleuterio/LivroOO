@@ -3,13 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.douglas.model;
+package br.com.douglas.livraria.produtos;
+
+import br.com.douglas.livraria.Autor;
 
 /**
  *
  * @author douglas-pc
  */
-public class LivroFisico extends Livro {
+public class LivroFisico extends Livro implements Promocional{
     
     private double taxaImpressao = 0.05;
     
@@ -21,6 +23,7 @@ public class LivroFisico extends Livro {
         return this.getValor() * taxaImpressao;
     }
  
+    @Override
     public boolean aplicarDescontoDe(double porcentagem) {
         if(porcentagem > 0.3){
             return false;

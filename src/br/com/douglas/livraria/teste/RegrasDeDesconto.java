@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.douglas.service;
+package br.com.douglas.livraria.teste;
 
 import br.com.douglas.model.Autor;
 import br.com.douglas.model.Ebook;
@@ -21,11 +21,11 @@ public class RegrasDeDesconto {
         Autor autor = new Autor();
         autor.setNome("Rodrigo Turini");
 
-        Livro livro = new LivroFisico(autor);
-        livro.setValor(59.90);
+        LivroFisico livroFisico = new LivroFisico(autor);
+        livroFisico.setValor(59.90);
         
-        if(livro.aplicarDescontoDe(0.30)){
-            System.out.println("Valor do livro com Desconto: "+livro.getValor());
+        if(livroFisico.aplicarDescontoDe(0.30)){
+            System.out.println("Valor do livro com Desconto: "+livroFisico.getValor());
         }else{
             System.out.println("Desconto não pode ser superior a 30%");
         }
@@ -40,11 +40,7 @@ public class RegrasDeDesconto {
         
         Livro miniLivro = new MiniLivro(autor);
         miniLivro.setValor(39.90);
-        if(miniLivro.aplicarDescontoDe(0.3)){
-             System.out.println("Valor do livro com Desconto: "+miniLivro.getValor());
-        } else {
-            System.out.println("Desconto não pode ser superior a 15%");
-        }
+        
         
     }
 }
